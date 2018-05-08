@@ -1,7 +1,7 @@
 ---
 layout: index
-title: Richard Littauer
-tagline: My personal website, where I list all of my main projects and occasionally blog.
+title: Karolina Alexiou
+tagline: My personal website, where I showcase all my main projects.
 ---
 {% include JB/setup %}
 
@@ -10,36 +10,16 @@ tagline: My personal website, where I list all of my main projects and occasiona
     <div class="container">
       <div class="row col-sm-8 col-sm-offset-2 speak">
 
-        <p>Burnt Fen Creative is where Richard Littauer and his team exercise their creative muscles. From <a href="https://www.burntfen.com/projects/maintainer-mountaineer/">Maintainer Mountaineer</a> to <a href="https://www.burntfen.com/projects/the-user-is-drunk/">The User is Drunk</a>, from <a href="https://www.burntfen.com/projects/bushwhich/">Bushwhich</a> to <a href="https://www.burntfen.com/projects/wordhoard-press/">Word Hoard Press</a>, we focus on new ways to understand art and media, the internet and words, markets and businesses.</p>
-
-        <p>Richard is available for talks, consulting, and collaboration.</p>
-
-        <form class="tlemailform" action="https://tinyletter.com/richlitt" method="post" target="popupwindow" onsubmit="window.open('https://tinyletter.com/richlitt', 'popupwindow', 'scrollbars=yes,width=800,height=600');return true">
-          <span class="input input--madoka">
-              <input type="hidden" value="1" name="embed" />
-              <input class="input__field input__field--madoka" name="email" type="text" id="tlemail" />
-              <label class="input__label input__label--madoka" for="tlemail">
-              <svg class="graphic graphic--madoka" width="100%" height="100%" viewBox="0 0 404 77" preserveAspectRatio="none">
-              <path d="m0,0l404,0l0,77l-404,0l0,-77z"/>
-              </svg>
-              <span class="input__label-content input__label-content--madoka">Email</span>
-          </label>
-          </span>
-          <button class="btn btn-subscribe" type="submit" value="Subscribe">Start reading Richard's weekly newsletter</button>
-        </form>
+       <p> Under construction! </p>
 
         <div class='social-media'>
-          <a href="https://github.com/RichardLitt" rel="me"><i class="fa fa-github"></i></a>
-          <a href="https://twitter.com/#!/richlitt" rel="me"><i class="fa fa-twitter"></i></a>
-          <a href="https://medium.com/@richlitt"><i class="fa fa-medium"></i></a>
-          <a href="https://instagram.com/richlittv3/"><i class="fa fa-instagram"></i></a>
-          <a href="https://dribbble.com/richlitt"><i class="fa fa-dribbble"></i></a>
-          <a href="http://www.flickr.com/photos/101526362@N04/"><i class="fa fa-flickr"></i></a>
-          <a href="http://www.last.fm/user/RichardFenn"><i class="fa fa-lastfm"></i></a>
-          <a href="https://angel.co/richlitt"><i class="fa fa-angellist"></i></a>
+          <a href="https://github.com/carolinux" rel="me"><i class="fa fa-github"></i></a>
+          <a href="https://twitter.com/#!/_sandtweets" rel="me"><i class="fa fa-twitter"></i></a>
+          <a href="https://medium.com/@_sandtweets"><i class="fa fa-medium"></i></a>
+          <a href="https://instagram.com/idledaze/"><i class="fa fa-instagram"></i></a>
         </div>
 
-        <p><a href="mailto:richard@burntfen.com">richard@burntfen.com</a></p>
+        <p><a href="mailto:carolinegr@gmail.com">carolinegr@gmail.com</a></p>
 
       </div>
     </div>
