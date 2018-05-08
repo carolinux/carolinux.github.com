@@ -12,11 +12,10 @@ markdown: kramdown
 title : Burnt Fen Creative
 tagline: Poetry // Code // UX // Open Source // Nomadism // Books // Coffee // Linguistics. Not in that order.
 author :
-  name : Richard Littauer
-  email : richard@burntfen.com
-  github : RichardLitt
-  twitter : RichLitt
-  #feedburner : feedname
+  name : Karolina Alexiou
+  email : carolinegr@gmail.com
+  github : carolinux
+  twitter : _sandtweets
 
 sass:
   style: compressed
