@@ -24,27 +24,23 @@ tagline: My personal website, where I showcase all my main projects.
       </div>
     </div>
   </div>
-<!--
   <div class="container">
     <div class="row col-md-12 projects">
       {% assign projects = site.projects | sort: 'ranking' %}
       {% for project in projects %}
         {% assign loopindex = forloop.index | modulo: 3 %}
-          <div class="project col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-3">
-            <div class="img-container">
-              <a href="{{ project.url }}">
-                Here I would like to steal the hover effect from Eirini: http://emalliaraki.com/
-                <img src="assets/img/project/{{ project.picture-small }}" class="card-image"/>
-              </a>
+          <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-3">
+            <div class="hovereffect">
+                <img class="img-responsive" src="assets/img/project/{{ project.picture-small }}" alt="">
+                    <div class="overlay">
+                       <h2>{{project-title}}</h2>
+                      <p>{{ project.stub}}<br />
+                        <a href="{{project.url}}">info</a>
+                      {{ project.role }} <span class="status">{{ project.status }}</span></p>
+
+                    </div>
             </div>
-            <a class="project-title" href="{{ project.url }}">
-              <h4>
-                {{ project.title }}
-              </h4>
-              <p>{{ project.stub}}<br />
-              {{ project.role }} <span class="status">{{ project.status }}</span></p>
-            </a>
-          </div>
+        </div>
         {% if forloop.index == 3 %}
           <div class="clearfix visible-sm-block"></div>
         {% elsif forloop.index == 4 %}
@@ -56,7 +52,7 @@ tagline: My personal website, where I showcase all my main projects.
     </div>
   </div>
 </div>
-
+<!---
 <div class="container">
   <div class="row press">
     <h1 class="section-header">Press</h1>
