@@ -24,7 +24,7 @@ tagline: My personal website, where I showcase all my main projects.
       </div>
     </div>
   </div>
-
+<!--
   <div class="container">
     <div class="row col-md-12 projects">
       {% assign projects = site.projects | sort: 'ranking' %}
@@ -33,6 +33,7 @@ tagline: My personal website, where I showcase all my main projects.
           <div class="project col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-3">
             <div class="img-container">
               <a href="{{ project.url }}">
+                Here I would like to steal the hover effect from Eirini: http://emalliaraki.com/
                 <img src="assets/img/project/{{ project.picture-small }}" class="card-image"/>
               </a>
             </div>
@@ -70,7 +71,7 @@ tagline: My personal website, where I showcase all my main projects.
         </div>
       {% endif %}
     {% endfor %}
-  </div>
+  </div>-->
 </div>
 
 {% include footer.html %}
