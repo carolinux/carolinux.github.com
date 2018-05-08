@@ -41,13 +41,7 @@ tagline: My personal website, where I showcase all my main projects.
                     </div>
             </div>
         </div>
-        {% if forloop.index == 3 %}
-          <div class="clearfix visible-sm-block"></div>
-        {% elsif forloop.index == 4 %}
-          <div class="clearfix visible-md-block visible-lg-block"></div>
-        {% elsif forloop.index == 12 %}
-          <div class="clearfix visible-md-block visible-lg-block"></div>
-        {% endif %}
+
       {% endfor %}
     </div>
   </div>
