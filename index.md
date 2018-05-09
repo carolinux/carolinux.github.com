@@ -32,15 +32,36 @@ tagline: My personal website, where I showcase all my main projects.
           <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-3">
             <div class="hovereffect">
                 <img class="img-responsive" src="assets/img/project/{{ project.picture-small }}" alt="">
-                    <div class="overlay">
-                       <h2>{{project-title}}</h2>
-                      <p>{{ project.stub}}<br />
-                        <a href="{{project.url}}">info</a>
-                      {{ project.role }} <span class="status">{{ project.status }}</span></p>
-
-                    </div>
+                    <a href="{{project.url}}"> <div class="overlay">
+                    
+                    </div></a>
             </div>
+            <div>
+               <a class="project-title" href="{{project.url}}">
+              <h4>
+                {{project-title}}
+              </h4>
+              <p>{{ project.stub}}<br />
+              {{ project.role }} <span class="status">{{ project.status }}</span></p>
+            </a>
+           </div>
         </div>
+        {% if forloop.index == 3 %}
+          <div class="clearfix visible-sm-block"></div>
+        {% elsif forloop.index == 4 %}
+          <div class="clearfix visible-md-block visible-lg-block"></div>
+        {% elsif forloop.index == 12 %}
+          <div class="clearfix visible-md-block visible-lg-block"></div>
+                {% elsif forloop.index == 20 %}
+          <div class="clearfix visible-md-block visible-lg-block"></div>
+                {% elsif forloop.index == 24 %}
+          <div class="clearfix visible-md-block visible-lg-block"></div>
+                {% elsif forloop.index == 28 %}
+          <div class="clearfix visible-md-block visible-lg-block"></div>
+
+                {% elsif forloop.index == 40 %}
+          <div class="clearfix visible-md-block visible-lg-block"></div>
+        {% endif %}
 
       {% endfor %}
     </div>
@@ -61,7 +82,8 @@ tagline: My personal website, where I showcase all my main projects.
         </div>
       {% endif %}
     {% endfor %}
-  </div>-->
+  </div>
 </div>
 
+-->
 {% include footer.html %}
