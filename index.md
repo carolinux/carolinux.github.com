@@ -25,6 +25,10 @@ tagline: My personal website, where I showcase all my main projects.
     </div>
   </div>
   <div class="container">
+  <div class="row col-xs-12">
+    <hr />
+    <h1 class="section-title">Projects</h1>
+  </div>
     <div class="row col-md-12 projects">
       {% assign projects = site.projects | sort: 'ranking' %}
       {% for project in projects %}
@@ -32,10 +36,9 @@ tagline: My personal website, where I showcase all my main projects.
           <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-3">
           <div class='img-container'>
             <div class="hovereffect">
-                <img class="img-responsive" src="assets/img/project/{{ project.picture-small }}" alt="">
-                    <a href="{{project.url}}"> <div class="overlay">
-                    
-                    </div></a>
+                <a href="{{project.url}}">
+                <img class="img-responsive" src="assets/img/project/{{ project.picture-before-small }}" alt="" onmouseover="this.src='assets/img/project/{{ project.picture-after-small }}'"
+    onmouseout="this.src='assets/img/project/{{ project.picture-before-small }}'"></a>
             </div>
            
                <a class="project-title" href="{{project.url}}">

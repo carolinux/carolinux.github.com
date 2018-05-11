@@ -1,8 +1,9 @@
 ---
 layout: project
 title: "Articles on Data Science"
-picture: tech-articles.png
-picture-small: tech-articles-small.png
+picture: tech-articles-after.png
+picture-before-small: tech-articles-before-small.png
+picture-after-small: tech-articles-after-small.png
 status: Ongoing
 role: Author
 stub: Articles on Data Science 

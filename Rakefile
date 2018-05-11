@@ -111,7 +111,8 @@ task :project do
     project.puts "layout: project"
     project.puts "title: \"#{title}\""
     project.puts "picture: #{slug}.#{picture}"
-    project.puts "picture-small: #{slug}-200.#{picture}"
+    project.puts "picture-before-small: #{slug}-before-small.#{picture}"
+    project.puts "picture-after-small: #{slug}-after-small.#{picture}"
     if website
       project.puts "outbound: #{website}"
     end
