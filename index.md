@@ -42,7 +42,7 @@ tagline: My personal website, where I showcase all my main projects.
                 {{project-title}}
               </h4>
               <p>{{ project.stub}}<br />
-              {{ project.role }} <span class="status">{{ project.status }}</span></p>
+              <span class="status">{{ project.status }}</span></p>
             </a>
            
            </div>
