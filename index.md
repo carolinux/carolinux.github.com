@@ -25,10 +25,6 @@ tagline: My personal website, where I showcase all my main projects.
     </div>
   </div>
   <div class="container">
-  <div class="row col-xs-12">
-    <hr />
-    <h1 class="section-title">Projects</h1>
-  </div>
     <div class="row col-md-12 projects">
       {% assign projects = site.projects | sort: 'ranking' %}
       {% for project in projects %}
