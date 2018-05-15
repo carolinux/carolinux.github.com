@@ -10,7 +10,7 @@
   </div>
   <div class="col-sm-8">
     <h4>{{ page.stub}}</h4>
-    <p class="role"><i>{{ page.role }}</i> {{ page.status }}</p>
+    <p class="role"><i>{{ page.role }}</i>, {{ page.status }}</p>
     {{ content }}
 
     {% if page.outbound %}<p>
@@ -45,7 +45,7 @@
               {{ project.title }}
             </h4>
             <p>{{ project.stub}}<br />
-            {{ project.role }} <span class="status">{{ project.status }}</span></p>
+            {{ project.role }}, <span class="status">{{ project.status }}</span></p>
           </a>
         </div>
       <div class="clearfix visible-sm-block"></div>
