@@ -20,6 +20,7 @@ I like to create memes for myself and my friends. In fact, I had put lolcat-like
 <li><a href="../../assets/img/project/corners.png">When I have cut corners in developing code</a></li> 
 <li><a href="../../assets/img/project/crepe_bowties.png">For a friend's wedding</a> (if you look closely, the bowties are <a href="../../assets/img/project/crepes.jpg">crepes</a>)</li>
 <li><a href="https://github.com/carolinux/cv/blob/honest/KarolinaAlexiouCV.pdf">'Alternative Facts' CV</a></li>
+<li><a href="../../assets/img/project/zmartphone.jpg">Ancient smartphone</a></li> 
 
 
 </ul>
