@@ -1,6 +1,6 @@
 ---
 layout: project
-title: "lols"
+title: "Lols"
 picture: lols.png
 picture-before-small: lols.png
 picture-after-small: lols-after.png
