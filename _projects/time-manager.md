@@ -7,7 +7,7 @@ picture-after-small: tm-before-small.png
 status: finished
 role: Core Collaborator
 stub: Visualization plugin for geotemporal data 
-ranking: 1
+ranking: 3
 ---
 {% include JB/setup %}
 <p> Extending Time Manager has been a project I undertook in my spare time in the period from December 2014 to early 2017. Time Manager is a plugin for the open source GIS software called QGIS that allows the user to animate on the map a spatial dataset that also has a time dimension and then export it as frames. QGIS without the plugin can only render a static map. (At least that was the case until 2018 before QGIS 3.0 came out).</p>

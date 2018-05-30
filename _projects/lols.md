@@ -7,7 +7,7 @@ picture-after-small: lols-after.png
 status: ongoing forever
 role: Content Creator
 stub: Lols
-ranking: 3
+ranking: 2
 ---
 {% include JB/setup %}
 
