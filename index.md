@@ -31,7 +31,7 @@ tagline: My personal website, where I showcase all my main projects.
         {% assign loopindex = forloop.index | modulo: 3 %}
           <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-0 col-md-3">
           <div class='img-container'>
-            <div class="hovereffect">
+            <div>
                 <a href="{{project.url}}">
                 <img class="img-responsive" src="assets/img/project/{{ project.picture-before-small }}" alt="" onmouseover="this.src='assets/img/project/{{ project.picture-after-small }}'"
     onmouseout="this.src='assets/img/project/{{ project.picture-before-small }}'"></a>
@@ -39,9 +39,9 @@ tagline: My personal website, where I showcase all my main projects.
            
                <a class="project-title" href="{{project.url}}">
               <h4>
-                {{project-title}}
+                {{project.title}}
               </h4>
-              <p>{{ project.stub}}<br />
+              <p>
               <span class="status">{{ project.status }}</span></p>
             </a>
            
