@@ -10,7 +10,7 @@ tagline: My personal website, where I showcase all my main projects.
     <div class="container">
       <div class="row col-sm-8 col-sm-offset-2 speak">
 
-       <p> Hi, I am Karolina. This website sets forth short introductions to the projects I am involved in. </p>
+       <p> Hi, I am Karolina. Here you can find short introductions to the projects I am involved in. </p>
 
         <div class='social-media'>
           <a href="https://github.com/carolinux" rel="me"><i class="fa fa-github"></i></a>
