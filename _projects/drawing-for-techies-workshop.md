@@ -18,6 +18,7 @@ I have created a workshop that introduces ideas about what is important in drawi
 <blockquote class="twitter-tweet" data-conversation="none" data-lang="en"><p lang="en" dir="ltr">Thanks <a href="https://twitter.com/_sandtweets?ref_src=twsrc%5Etfw">@_sandtweets</a> for the squirrel drawing/programming lesson this morning! <a href="https://twitter.com/hashtag/MozFest?src=hash&amp;ref_src=twsrc%5Etfw">#MozFest</a> <a href="https://t.co/XDUtrEOhgo">pic.twitter.com/XDUtrEOhgo</a></p>&mdash; Bastian Greshake Tzovaras (@gedankenstuecke) <a href="https://twitter.com/gedankenstuecke/status/924263201969229824?ref_src=twsrc%5Etfw">October 28, 2017</a></blockquote>
 
 The workshop consists of some theoretical parts and hands-on exercises, aided by a custom tool.
+Exercises include drawing cylinders from several angles while being aware of the 3d shape of the object, using a custom grid to copy a sketch and doing several iterations of thumbnails to explore an idea for a drawing. All the while, feedback and suggestions are offered to the participants.
 
 <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en"><p lang="en" dir="ltr">Amazing drawing workshop at <a href="https://twitter.com/hashtag/socratesCH?src=hash&amp;ref_src=twsrc%5Etfw">#socratesCH</a> - I was amazed what even I could accomplish in such a short time<a href="https://twitter.com/_sandtweets?ref_src=twsrc%5Etfw">@_sandtweets</a> <a href="https://t.co/onKwRDHMPH">pic.twitter.com/onKwRDHMPH</a></p>&mdash; Franzi [say Frun-C] (@Singsalad) <a href="https://twitter.com/Singsalad/status/974585966324219906?ref_src=twsrc%5Etfw">March 16, 2018</a></blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -25,9 +26,9 @@ The workshop consists of some theoretical parts and hands-on exercises, aided by
 
  The end outcome is that participants gain more confidence in their drawing abilities, go deeper into drawing even simple forms and understand that the underlying process for drawing is not a magical fuzzy path, but consists of many sequential and 'deterministic' steps.
 
-I ran the workshop for the first time in the <a href="https://medium.com/@_sandtweets/learn-drawing-and-programming-at-the-same-time-at-mozfest-2017-6a9f8627b72">Mozilla Festival</a> in October 2017 in London, and since then, I have ran it also at the <a href="https://events.ccc.de/congress/2017/wiki/index.php/Session:Learning_to_draw_for_techies">34c3</a> in Leipzig and several times in Switzerland. I have experimented with various formats and faciliation modes, and have found that the workshop works best with a limited number of people, but can expand to fill all available time because there's the potential to go deeper into the exercises I have designed.
+I ran the workshop for the first time in the <a href="https://medium.com/@_sandtweets/learn-drawing-and-programming-at-the-same-time-at-mozfest-2017-6a9f8627b72">Mozilla Festival</a> in October 2017 in London, and since then, I have ran it also at the <a href="https://events.ccc.de/congress/2017/wiki/index.php/Session:Learning_to_draw_for_techies">34c3</a> in Leipzig and several times in Switzerland. I have experimented with various formats and faciliation modes, and have found that the workshop works best with a limited number of people (up to 20), but can expand to fill all available time because there's the potential to go deeper into the exercises I have designed.
 
-You are welcome to reach out to me if you want me to lead the workshop in your company/team, as part of an offsite or other event. (carolinegr@gmail.com)
+You are welcome to reach out to me if you want to book me to lead the workshop in your company/team, as part of an offsite or other event. (carolinegr@gmail.com)
  
 And some more tweets :)
 
