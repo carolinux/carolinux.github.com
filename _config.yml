@@ -9,8 +9,8 @@ markdown: kramdown
 # Themes are encouraged to use these universal variables
 # so be sure to set them if your theme uses them.
 #
-title : Burnt Fen Creative
-tagline: Poetry // Code // UX // Open Source // Nomadism // Books // Coffee // Linguistics. Not in that order.
+title : Karolina Alexiou
+tagline: Art // Code // Open Source // Humour
 author :
   name : Karolina Alexiou
   email : carolinegr@gmail.com
@@ -43,7 +43,7 @@ collections:
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : https://burntfen.com
+production_url : https://carolinux.github.io
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
