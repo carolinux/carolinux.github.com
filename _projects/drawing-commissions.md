@@ -23,5 +23,14 @@ Here is some work people have commissioned me for in the past:
 
 Portraits like this are great as gifts or for decorating your own house. After an initial short consultation to get an idea of what you want, for example, in terms of impact and colors, I can work with reference pictures.
 
-Get in touch with me now at carolinegr@gmail.com or <a href="https://twitter.com/_sandtweets">@_sandtweets</a>.
+The pricelist &#9829; (with materials already covered):
+<p>
+A5-sized canvas: 130 CHF<br>
+A4-sized canvas: 200 CHF<br>
+A3-sized canvas: 300 CHF
+</p>
+
+Paintings can be picked up in Zurich for the time being.
+
+Get in touch with me now at carolinegr@gmail.com or <a href="https://twitter.com/_sandtweets">@_sandtweets</a> for a consultation.
 
