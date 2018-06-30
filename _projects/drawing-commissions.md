@@ -19,7 +19,7 @@ Here is some work people have commissioned me for in the past:
 <img src="../../assets/img/project/samples.jpeg">
 </p>
 
-(more in my <a href="https://www.instagram.com/idledaze/">instagram</a>)
+(more in my <a href="https://www.instagram.com/idledaze/">instagram</a> or <a href="../../assets/img/project/portfolio.pdf">my portfolio</a>)
 
 Portraits like this are great as gifts or for decorating your own house. After an initial short consultation to get an idea of what you want, for example, in terms of impact and colors, I can work with reference pictures.
 
