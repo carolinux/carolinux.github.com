@@ -25,7 +25,7 @@ title: Karolina Alexiou - Zurich Data Engineer, DevOps, Technical Interviewing
 <div class="container">
     <div class="row col-md-12 projects">
           <div class="col-xs-10 col-xs-offset-2 col-sm-4 col-sm-offset-2 col-md-3">
-<h4>Contact Form</h4>
+<h4>Write to me</h4>
           <div class='img-container'>
             <div>
                 <img class="img-responsive" src="assets/img/project/tech-articles-before-small.png"  alt="" onmouseover="this.src='assets/img/project/tech-articles-after-small.png'"
@@ -37,6 +37,7 @@ title: Karolina Alexiou - Zurich Data Engineer, DevOps, Technical Interviewing
         </div>
 
           <div class="col-xs-10 col-xs-offset-1 col-sm-4 col-sm-offset-1 col-md-3">
+<div class='img-container'>
 <h4> Your details:</h4>
 <form
   action="https://formspree.io/xknqgnqg"
@@ -60,6 +61,7 @@ title: Karolina Alexiou - Zurich Data Engineer, DevOps, Technical Interviewing
   <button type="submit">Send</button>
 </p>
 </form>
+</div>
 </div>
 </div>
 </div>
