@@ -1,7 +1,6 @@
 ---
 layout: index
-title: Karolina Alexiou
-tagline: My personal website, where I showcase all my main projects.
+title: Karolina Alexiou - Zurich Data Engineer, DevOps, Technical Interviewing
 ---
 {% include JB/setup %}
 
