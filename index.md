@@ -26,7 +26,6 @@ title: Karolina Alexiou - Zurich Data Engineer, DevOps, Technical Interviewing
     <div class="row col-md-12 projects">
           <div class="col-xs-10 col-xs-offset-2 col-sm-4 col-sm-offset-2 col-md-3">
 <h4>Write to me</h4>
-          <div class='img-container'>
             <div>
                 <img class="img-responsive" src="assets/img/project/tech-articles-before-small.png"  alt="" onmouseover="this.src='assets/img/project/tech-articles-after-small.png'"
     onmouseout="this.src='assets/img/project/tech-articles-before-small.png'">
@@ -61,7 +60,6 @@ title: Karolina Alexiou - Zurich Data Engineer, DevOps, Technical Interviewing
   <button type="submit">Send</button>
 </p>
 </form>
-</div>
 </div>
 </div>
 </div>
