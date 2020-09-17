@@ -12,7 +12,7 @@ title: Karolina Alexiou - Zurich Data Engineer, DevOps, Technical Interviewing
        <p> Hi! </p>
 
  <p>I am Karolina Alexiou and I am a software engineer based in Zurich, Switzerland. I support businesses to deploy their infrastructure into the cloud and also undertake data engineering projects to integrate, combine and visualize data sources.</p> <p>I can also support your company design and carry out an effective hiring process for software engineers.</p>
-<p> Check out my <a href="services.html">services page</a> or get in touch below to learn more. (+41 76 227 1139)</p>
+<p> Check out my <a href="services.html">services page</a> or get in touch below to learn more. </p>
         <div class='social-media'>
           <a href="https://github.com/carolinux" rel="me"><i class="fa fa-github"></i></a>
           <a href="https://www.linkedin.com/in/ariadni-karolina-alexiou-9a365734/" rel="me"><img src="assets/li.png" width="40" height="40"/></a>
