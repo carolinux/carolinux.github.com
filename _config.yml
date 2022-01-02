@@ -31,9 +31,6 @@ collections:
   projects:
     output: true
     permalink: /projects/:path/
-  reviews:
-    output: true
-    permalink: /the-litt-review/:path/
 
 # The production_url is only used when full-domain names are needed
 # such as sitemap.txt
@@ -43,7 +40,7 @@ collections:
 # Else if you are pushing to username.github.com, replace with your username.
 # Finally if you are pushing to a GitHub project page, include the project name at the end.
 #
-production_url : https://carolinux.github.io
+production_url : https://www.lucidcode.ch
 
 # All Jekyll-Bootstrap specific configurations are namespaced into this hash
 #
@@ -113,11 +110,11 @@ JB :
   # Set 'provider' to the analytics provider you want to use.
   # Set 'provider' to false to turn analytics off globally.
   #
-  analytics :
-    provider : google
+  #analytics :
+    #provider : google
     # I set this manually
-    google :
-        tracking_id : 'UA-4124866-15'
+    #google :
+    #    tracking_id : 'UA-4124866-15'
     #getclicky :
       #site_id :
     #mixpanel :

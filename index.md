@@ -65,7 +65,7 @@ title: Karolina Alexiou - Zurich Data Engineer, DevOps, Technical Interviewing
 </div>
 </div>
 </div>
-<!---
+
   <div class="container">
     <div class="row col-md-12 projects">
       {% assign projects = site.projects | sort: 'ranking' %}
@@ -110,24 +110,6 @@ title: Karolina Alexiou - Zurich Data Engineer, DevOps, Technical Interviewing
     </div>
   </div>
 </div>
--->
-<!---
-<div class="container">
-  <div class="row press">
-    <h1 class="section-header">Press</h1>
-    {% for press in site.data.press %}
-      {% if press.hide != true %}
-        <div class="col-xs-6 col-sm-3 col-md-2">
-          <div class="img-container">
-            <a href="{{ press.url }}" title="{{ press.title }}">
-              <img src="assets/img/press/{{ press.image }}" class="card-image">
-            </a>
-          </div>
-        </div>
-      {% endif %}
-    {% endfor %}
-  </div>
-</div>
 
--->
+
 {% include footer.html %}
