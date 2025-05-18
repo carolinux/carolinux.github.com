@@ -203,14 +203,14 @@
       // Page 4: blank
       pdf.addPage();
       pdf.text("(optional) create grid manually:", 10, 10);
-      const blankCanvas = document.createElement("canvas");
-      blankCanvas.width = imgW;
-      blankCanvas.height = imgH;
-      const blankCtx = blankCanvas.getContext("2d");
-      blankCtx.fillStyle = "white";
-      blankCtx.fillRect(0, 0, imgW, imgH);
+      const blankCanvas2 = document.createElement("canvas");
+      blankCanvas2.width = imgW;
+      blankCanvas2.height = imgH;
+      const blankCtx2 = blankCanvas2.getContext("2d");
+      blankCtx2.fillStyle = "white";
+      blankCtx2.fillRect(0, 0, imgW, imgH);
 
-      pdf.addImage(blankCanvas.toDataURL("image/png"), "PNG", offsetX, offsetY, drawW, drawH);
+      pdf.addImage(blankCanvas2.toDataURL("image/png"), "PNG", offsetX, offsetY, drawW, drawH);
             pdf.setDrawColor(gridColor);
       pdf.setLineWidth(borderThickness);
       pdf.rect(offsetX, offsetY, drawW, drawH);
