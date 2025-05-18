@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Recursive Image Splitter</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 20px; }
+    canvas { border: 1px solid #ccc; cursor: crosshair; display: block; margin: 20px auto; }
+    input[type="range"] { width: 200px; }
+  </style>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <h1>Recursive Image Splitter</h1>
+  <input type="file" id="upload" accept="image/*" />
+  <br />
+  <label>Border Thickness: <span id="thickness-val">2</span>px</label>
+  <input type="range" id="thickness" min="1" max="20" value="2" />
+  <br />
+  <label>Grid Color: </label>
+  <input type="color" id="gridColor" value="#000000" />
+  <br /><br />
+  <button id="undo">Undo</button>
+  <button id="download">Download PDF</button>
+  <canvas id="canvas"></canvas>
+
+  <script>
+    const canvas = document.getElementById("canvas");
+    const ctx = canvas.getContext("2d");
+    const upload = document.getElementById("upload");
+    const thicknessInput = document.getElementById("thickness");
+    const thicknessVal = document.getElementById("thickness-val");
+    const colorPicker = document.getElementById("gridColor");
+    const downloadBtn = document.getElementById("download");
+    const undoBtn = document.getElementById("undo");
+
+    let image = null;
+    let regions = [];
+    let splitLines = [];
+    let borderThickness = parseInt(thicknessInput.value);
+    let gridColor = colorPicker.value;
+    let history = [];
+
+    thicknessInput.oninput = () => {
+      borderThickness = parseInt(thicknessInput.value);
+      thicknessVal.textContent = borderThickness;
+      if (image) drawAll();
+    };
+
+    colorPicker.oninput = () => {
+      gridColor = colorPicker.value;
+      if (image) drawAll();
+    };
+
+    upload.onchange = (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const img = new Image();
+      img.onload = () => {
+        canvas.width = img.width;
+        canvas.height = img.height;
+        image = img;
+        regions = [{ x: 0, y: 0, width: canvas.width, height: canvas.height }];
+        splitLines = [];
+        history = [];
+        drawAll();
+      };
+      img.src = URL.createObjectURL(file);
+    };
+
+    canvas.onclick = (e) => {
+      if (!image) return;
+      const rect = canvas.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+
+      for (let i = 0; i < regions.length; i++) {
+        const r = regions[i];
+        if (x >= r.x && x <= r.x + r.width && y >= r.y && y <= r.y + r.height) {
+          history.push({
+            regions: JSON.parse(JSON.stringify(regions)),
+            splitLines: JSON.parse(JSON.stringify(splitLines))
+          });
+
+          regions.splice(i, 1);
+
+          const w2 = (r.width - borderThickness) / 2;
+          const h2 = (r.height - borderThickness) / 2;
+
+          const centerX = r.x + w2;
+          const centerY = r.y + h2;
+
+          splitLines.push({ type: 'v', x: centerX, y: r.y, height: r.height });
+          splitLines.push({ type: 'h', y: centerY, x: r.x, width: r.width });
+
+          regions.push(
+            { x: r.x, y: r.y, width: w2, height: h2 },
+            { x: r.x + w2 + borderThickness, y: r.y, width: w2, height: h2 },
+            { x: r.x, y: r.y + h2 + borderThickness, width: w2, height: h2 },
+            { x: r.x + w2 + borderThickness, y: r.y + h2 + borderThickness, width: w2, height: h2 }
+          );
+          break;
+        }
+      }
+      drawAll();
+    };
+
+    undoBtn.onclick = () => {
+      if (history.length > 0) {
+        const prev = history.pop();
+        regions = prev.regions;
+        splitLines = prev.splitLines;
+        drawAll();
+      }
+    };
+
+    function drawAll() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.drawImage(image, 0, 0, canvas.width, canvas.height);
+
+      ctx.fillStyle = gridColor;
+      for (const line of splitLines) {
+        if (line.type === 'v') {
+          ctx.fillRect(line.x - borderThickness / 2, line.y, borderThickness, line.height);
+        } else if (line.type === 'h') {
+          ctx.fillRect(line.x, line.y - borderThickness / 2, line.width, borderThickness);
+        }
+      }
+    }
+
+    downloadBtn.onclick = () => {
+      const { jsPDF } = window.jspdf;
+      const imgW = canvas.width;
+      const imgH = canvas.height;
+      const orientation = imgW > imgH ? 'landscape' : 'portrait';
+      const pdf = new jsPDF({ orientation });
+      const pageWidth = pdf.internal.pageSize.getWidth();
+      const pageHeight = pdf.internal.pageSize.getHeight();
+
+      const scale = Math.min(pageWidth / imgW, pageHeight / imgH);
+      const drawW = imgW * scale;
+      const drawH = imgH * scale;
+      const offsetX = (pageWidth - drawW) / 2;
+      const offsetY = (pageHeight - drawH) / 2;
+
+      // Page 1: Image with overlay
+      const overlayCanvas = document.createElement("canvas");
+      overlayCanvas.width = imgW;
+      overlayCanvas.height = imgH;
+      const overlayCtx = overlayCanvas.getContext("2d");
+      overlayCtx.drawImage(image, 0, 0, imgW, imgH);
+      overlayCtx.fillStyle = gridColor;
+      for (const line of splitLines) {
+        if (line.type === 'v') {
+          overlayCtx.fillRect(line.x - borderThickness / 2, line.y, borderThickness, line.height);
+        } else {
+          overlayCtx.fillRect(line.x, line.y - borderThickness / 2, line.width, borderThickness);
+        }
+      }
+      pdf.addImage(overlayCanvas.toDataURL("image/png"), "PNG", offsetX, offsetY, drawW, drawH);
+
+      // Page 2: blank
+      pdf.addPage();
+      pdf.text("without grid:", 10, 10);
+      const blankCanvas = document.createElement("canvas");
+      blankCanvas.width = imgW;
+      blankCanvas.height = imgH;
+      const blankCtx = blankCanvas.getContext("2d");
+      blankCtx.fillStyle = "white";
+      blankCtx.fillRect(0, 0, imgW, imgH);
+
+      pdf.addImage(blankCanvas.toDataURL("image/png"), "PNG", offsetX, offsetY, drawW, drawH);
+            pdf.setDrawColor(gridColor);
+      pdf.setLineWidth(borderThickness);
+      pdf.rect(offsetX, offsetY, drawW, drawH);
+
+      // Page 3: grid only
+      pdf.addPage();
+      pdf.text("with grid:", 10, 10);
+      const gridCanvas = document.createElement("canvas");
+      gridCanvas.width = imgW;
+      gridCanvas.height = imgH;
+      const gridCtx = gridCanvas.getContext("2d");
+      gridCtx.fillStyle = "white";
+      gridCtx.fillRect(0, 0, imgW, imgH);
+      gridCtx.fillStyle = gridColor;
+      for (const line of splitLines) {
+        if (line.type === 'v') {
+          gridCtx.fillRect(line.x - borderThickness / 2, line.y, borderThickness, line.height);
+        } else {
+          gridCtx.fillRect(line.x, line.y - borderThickness / 2, line.width, borderThickness);
+        }
+      }
+      pdf.addImage(gridCanvas.toDataURL("image/png"), "PNG", offsetX, offsetY, drawW, drawH);
+      pdf.setDrawColor(gridColor);
+      pdf.setLineWidth(borderThickness);
+      pdf.rect(offsetX, offsetY, drawW, drawH);
+      pdf.save("grid_pages.pdf");
+    };
+  </script>
+</body>
+</html>
